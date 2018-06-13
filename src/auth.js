@@ -26,7 +26,8 @@ module.exports = function () {
     }
 
     function __bindContext(methodName, data) {
-        var _auth = this.$auth;
+        // var _auth = this.$auth;
+        var _auth = this;
 
         return _auth.options[methodName + 'Perform'].call(_auth, _auth.options.router._bindData.call(_auth, data, this));
     }
